@@ -1,0 +1,1856 @@
+[
+    {
+        "id": "about-dialog",
+        "label": "AboutDialog",
+        "description": "An about box. This is a dialog box with the application's icon, name, version number, and copyright, plus a button to show licenses for software used by the application.",
+        "url": "https://api.flutter.dev/flutter/material/AboutDialog-class.html",
+        "category": "material",
+        "type": "stateless",
+        "related": [],
+        "availableConstructors": [
+            {
+                "name": "AboutDialog",
+                "code": "AboutDialog({Key? key, String? applicationName, String? applicationVersion, Widget? applicationIcon, String? applicationLegalese, List<Widget>? children})"
+            }
+        ]
+    },
+    {
+        "id": "alert-dialog",
+        "label": "AlertDialog",
+        "description": "A Material Design alert dialog.",
+        "url": "https://api.flutter.dev/flutter/material/AlertDialog-class.html",
+        "category": "material",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "simple-dialog",
+                "label": "SimpleDialog"
+            },
+            {
+                "id": "dialog",
+                "label": "Dialog"
+            },
+            {
+                "id": "cupertino-alert-dialog",
+                "label": "CupertinoAlertDialog"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AlertDialog",
+                "code": "AlertDialog({Key? key, Widget? icon, EdgeInsetsGeometry? iconPadding, Color? iconColor, Widget? title, EdgeInsetsGeometry? titlePadding, TextStyle? titleTextStyle, Widget? content, EdgeInsetsGeometry? contentPadding, TextStyle? contentTextStyle, List<Widget>? actions, EdgeInsetsGeometry? actionsPadding, MainAxisAlignment? actionsAlignment, OverflowBarAlignment? actionsOverflowAlignment, VerticalDirection? actionsOverflowDirection, double? actionsOverflowButtonSpacing, EdgeInsetsGeometry? buttonPadding, Color? backgroundColor, double? elevation, Color? shadowColor, Color? surfaceTintColor, String? semanticLabel, EdgeInsets insetPadding = _defaultInsetPadding, Clip clipBehavior = Clip.none, ShapeBorder? shape, AlignmentGeometry? alignment, bool scrollable = false})"
+            }
+        ]
+    },
+    {
+        "id": "align",
+        "label": "Align",
+        "description": "A widget that aligns its child within itself and optionally sizes itself based on the child's size.",
+        "url": "https://api.flutter.dev/flutter/widgets/Align-class.html",
+        "category": "layout",
+        "type": "renderObject",
+        "related": [
+            {
+                "id": "animated-align",
+                "label": "AnimatedAlign"
+            },
+            {
+                "id": "custom-single-child-layout",
+                "label": "CustomSingleChildLayout"
+            },
+            {
+                "id": "center",
+                "label": "Center"
+            },
+            {
+                "id": "fractionally-sized-box",
+                "label": "FractionallySizedBox"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Align",
+                "code": "Align({Key? key, AlignmentGeometry alignment = Alignment.center, double? widthFactor, double? heightFactor, Widget? child})"
+            }
+        ]
+    },
+    {
+        "id": "animated-align",
+        "label": "AnimatedAlign",
+        "description": "Animated version of Align which automatically transitions the child's position over a given duration whenever the given alignment changes.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedAlign-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-container",
+                "label": "AnimatedContainer"
+            },
+            {
+                "id": "animated-padding",
+                "label": "AnimatedPadding"
+            },
+            {
+                "id": "animated-slide",
+                "label": "AnimatedSlide"
+            },
+            {
+                "id": "animated-positioned",
+                "label": "AnimatedPositioned"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedAlign",
+                "code": "AnimatedAlign({Key? key, required AlignmentGeometry alignment, Widget? child, double? heightFactor, double? widthFactor, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
+            }
+        ]
+    },
+    {
+        "id": "animated-container",
+        "label": "AnimatedContainer",
+        "description": "Animated version of Container that gradually changes its values over a period of time.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-padding",
+                "label": "AnimatedPadding"
+            },
+            {
+                "id": "animated-positioned",
+                "label": "AnimatedPositioned"
+            },
+            {
+                "id": "animated-align",
+                "label": "AnimatedAlign"
+            },
+            {
+                "id": "animated-switcher",
+                "label": "AnimatedSwitcher"
+            },
+            {
+                "id": "animated-cross-fade",
+                "label": "AnimatedCrossFade"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedContainer",
+                "code": "AnimatedContainer({Key? key, AlignmentGeometry? alignment, EdgeInsetsGeometry? padding, Color? color, Decoration? decoration, Decoration? foregroundDecoration, double? width, double? height, BoxConstraints? constraints, EdgeInsetsGeometry? margin, Matrix4? transform, AlignmentGeometry? transformAlignment, Widget? child, Clip clipBehavior = Clip.none, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
+            }
+        ]
+    },
+    {
+        "id": "animated-cross-fade",
+        "label": "AnimatedCrossFade",
+        "description": "A widget that cross-fades between two given children and animates itself between their sizes.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedCrossFade-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-opacity",
+                "label": "AnimatedOpacity"
+            },
+            {
+                "id": "animated-switcher",
+                "label": "AnimatedSwitcher"
+            },
+            {
+                "id": "animated-size",
+                "label": "AnimatedSize"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedCrossFade",
+                "code": "AnimatedCrossFade({Key? key, required Widget firstChild, required Widget secondChild, Curve firstCurve = Curves.linear, Curve secondCurve = Curves.linear, Curve sizeCurve = Curves.linear, AlignmentGeometry alignment = Alignment.topCenter, required CrossFadeState crossFadeState, required Duration duration, Duration? reverseDuration, AnimatedCrossFadeBuilder layoutBuilder = defaultLayoutBuilder, bool excludeBottomFocus = true})"
+            }
+        ]
+    },
+    {
+        "id": "animated-opacity",
+        "label": "AnimatedOpacity",
+        "description": "Animated version of Opacity which automatically transitions the child's opacity over a given duration whenever the given opacity changes.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-cross-fade",
+                "label": "AnimatedCrossFade"
+            },
+            {
+                "id": "animated-switcher",
+                "label": "AnimatedSwitcher"
+            },
+            {
+                "id": "fade-transition",
+                "label": "FadeTransition"
+            },
+            {
+                "id": "sliver-animated-opacity",
+                "label": "SliverAnimatedOpacity"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedOpacity",
+                "code": "AnimatedOpacity({Key? key, Widget? child, required double opacity, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd, bool alwaysIncludeSemantics = false})"
+            }
+        ]
+    },
+    {
+        "id": "animated-padding",
+        "label": "AnimatedPadding",
+        "description": "Animated version of Padding which automatically transitions the indentation over a given duration whenever the given inset changes.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedPadding-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-container",
+                "label": "AnimatedContainer"
+            },
+            {
+                "id": "animated-align",
+                "label": "AnimatedAlign"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedPadding",
+                "code": "AnimatedPadding({Key? key, required EdgeInsetsGeometry padding, Widget? child, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
+            }
+        ]
+    },
+    {
+        "id": "animated-positioned",
+        "label": "AnimatedPositioned",
+        "description": "Animated version of Positioned which automatically transitions the child's position over a given duration whenever the given position changes.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedPositioned-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-positioned-directional",
+                "label": "AnimatedPositionedDirectional"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedPositioned",
+                "code": "AnimatedPositioned({Key? key, required Widget child, double? left, double? top, double? right, double? bottom, double? width, double? height, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
+            },
+            {
+                "name": "AnimatedPositioned.fromRect",
+                "code": "AnimatedPositioned.fromRect({Key? key, required Widget child, required Rect rect, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
+            }
+        ]
+    },
+    {
+        "id": "animated-rotation",
+        "label": "AnimatedRotation",
+        "description": "Animated version of Transform.rotate which automatically transitions the child's rotation over a given duration whenever the given rotation changes.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedRotation-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-scale",
+                "label": "AnimatedScale"
+            },
+            {
+                "id": "rotation-transition",
+                "label": "RotationTransition"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedRotation",
+                "code": "AnimatedRotation({Key? key, Widget? child, required double turns, Alignment alignment = Alignment.center, FilterQuality? filterQuality, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
+            }
+        ]
+    },
+    {
+        "id": "animated-scale",
+        "label": "AnimatedScale",
+        "description": "Animated version of Transform.scale which automatically transitions the child's scale over a given duration whenever the given scale changes.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedScale-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-rotation",
+                "label": "AnimatedRotation"
+            },
+            {
+                "id": "animated-size",
+                "label": "AnimatedSize"
+            },
+            {
+                "id": "animated-slide",
+                "label": "AnimatedSlide"
+            },
+            {
+                "id": "scale-transition",
+                "label": "ScaleTransition"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedScale",
+                "code": "AnimatedScale({Key? key, Widget? child, required double scale, Alignment alignment = Alignment.center, FilterQuality? filterQuality, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
+            }
+        ]
+    },
+    {
+        "id": "animated-size",
+        "label": "AnimatedSize",
+        "description": "Animated widget that automatically transitions its size over a given duration whenever the given child's size changes.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedSize-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "size-transition",
+                "label": "SizeTransition"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedSize",
+                "code": "AnimatedSize({Key? key, Widget? child, AlignmentGeometry alignment = Alignment.center, Curve curve = Curves.linear, required Duration duration, Duration? reverseDuration, Clip clipBehavior = Clip.hardEdge})"
+            }
+        ]
+    },
+    {
+        "id": "animated-slide",
+        "label": "AnimatedSlide",
+        "description": "Widget which automatically transitions the child's offset relative to its normal position whenever the given offset changes.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedSlide-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-positioned",
+                "label": "AnimatedPositioned"
+            },
+            {
+                "id": "animated-align",
+                "label": "AnimatedAlign"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedSlide",
+                "code": "AnimatedSlide({Key? key, Widget? child, required Offset offset, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
+            }
+        ]
+    },
+    {
+        "id": "animated-switcher",
+        "label": "AnimatedSwitcher",
+        "description": "A widget that by default does a cross-fade between a new widget and the widget previously set on the AnimatedSwitcher as a child.",
+        "url": "https://api.flutter.dev/flutter/widgets/AnimatedSwitcher-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "animated-cross-fade",
+                "label": "AnimatedCrossFade"
+            },
+            {
+                "id": "animated-opacity",
+                "label": "AnimatedOpacity"
+            },
+            {
+                "id": "fade-transition",
+                "label": "FadeTransition"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AnimatedSwitcher",
+                "code": "AnimatedSwitcher({Key? key, Widget? child, required Duration duration, Duration? reverseDuration, Curve switchInCurve = Curves.linear, Curve switchOutCurve = Curves.linear, AnimatedSwitcherTransitionBuilder transitionBuilder = AnimatedSwitcher.defaultTransitionBuilder, AnimatedSwitcherLayoutBuilder layoutBuilder = AnimatedSwitcher.defaultLayoutBuilder})"
+            }
+        ]
+    },
+    {
+        "id": "app-bar",
+        "label": "AppBar",
+        "description": "A Material Design app bar.",
+        "url": "https://api.flutter.dev/flutter/material/AppBar-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "scaffold",
+                "label": "Scaffold"
+            },
+            {
+                "id": "sliver-app-bar",
+                "label": "SliverAppBar"
+            },
+            {
+                "id": "tab-bar",
+                "label": "TabBar"
+            },
+            {
+                "id": "icon-button",
+                "label": "IconButton"
+            },
+            {
+                "id": "popup-menu-button",
+                "label": "PopupMenuButton"
+            },
+            {
+                "id": "flexible-space-bar",
+                "label": "FlexibleSpaceBar"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AppBar",
+                "code": "AppBar({Key? key, Widget? leading, bool automaticallyImplyLeading = true, Widget? title, List<Widget>? actions, Widget? flexibleSpace, PreferredSizeWidget? bottom, double? elevation, double? scrolledUnderElevation, ScrollNotificationPredicate notificationPredicate = defaultScrollNotificationPredicate, Color? shadowColor, Color? surfaceTintColor, ShapeBorder? shape, Color? backgroundColor, Color? foregroundColor, IconThemeData? iconTheme, IconThemeData? actionsIconTheme, bool primary = true, bool? centerTitle, bool excludeHeaderSemantics = false, double? titleSpacing, double toolbarOpacity = 1.0, double bottomOpacity = 1.0, double? toolbarHeight, double? leadingWidth, TextStyle? toolbarTextStyle, TextStyle? titleTextStyle, SystemUiOverlayStyle? systemOverlayStyle, bool forceMaterialTransparency = false, Clip? clipBehavior})"
+            }
+        ]
+    },
+    {
+        "id": "aspect-ratio",
+        "label": "AspectRatio",
+        "description": "A widget that attempts to size the child to a specific aspect ratio.",
+        "url": "https://api.flutter.dev/flutter/widgets/AspectRatio-class.html",
+        "category": "layout",
+        "type": "renderObject",
+        "related": [
+            {
+                "id": "align",
+                "label": "Align"
+            },
+            {
+                "id": "constrained-box",
+                "label": "ConstrainedBox"
+            },
+            {
+                "id": "unconstrained-box",
+                "label": "UnconstrainedBox"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "AspectRatio",
+                "code": "AspectRatio({Key? key, required double aspectRatio, Widget? child})"
+            }
+        ]
+    },
+    {
+        "id": "badge",
+        "label": "Badge",
+        "description": "A Material Design \"badge\".",
+        "url": "https://api.flutter.dev/flutter/material/Badge-class.html",
+        "category": "material",
+        "type": "stateless",
+        "related": [],
+        "availableConstructors": [
+            {
+                "name": "Badge",
+                "code": "Badge({Key? key, Color? backgroundColor, Color? textColor, double? smallSize, double? largeSize, TextStyle? textStyle, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, Offset? offset, Widget? label, bool isLabelVisible = true, Widget? child})"
+            },
+            {
+                "name": "Badge.count",
+                "code": "Badge.count({Key? key, Color? backgroundColor, Color? textColor, double? smallSize, double? largeSize, TextStyle? textStyle, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, Offset? offset, required int count, bool isLabelVisible = true, Widget? child})"
+            }
+        ]
+    },
+    {
+        "id": "card",
+        "label": "Card",
+        "description": "A Material Design card: a panel with slightly rounded corners and an elevation shadow.",
+        "url": "https://api.flutter.dev/flutter/material/Card-class.html",
+        "category": "material",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "list-tile",
+                "label": "ListTile"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Card",
+                "code": "Card({Key? key, Color? color, Color? shadowColor, Color? surfaceTintColor, double? elevation, ShapeBorder? shape, bool borderOnForeground = true, EdgeInsetsGeometry? margin, Clip? clipBehavior, Widget? child, bool semanticContainer = true})"
+            }
+        ]
+    },
+    {
+        "id": "center",
+        "label": "Center",
+        "description": "A widget that centers its child within itself.",
+        "url": "https://api.flutter.dev/flutter/widgets/Center-class.html",
+        "category": "layout",
+        "type": "renderObject",
+        "related": [
+            {
+                "id": "align",
+                "label": "Align"
+            },
+            {
+                "id": "row",
+                "label": "Row"
+            },
+            {
+                "id": "column",
+                "label": "Column"
+            },
+            {
+                "id": "container",
+                "label": "Container"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Center",
+                "code": "Center({Key? key, double? widthFactor, double? heightFactor, Widget? child})"
+            }
+        ]
+    },
+    {
+        "id": "checkbox",
+        "label": "Checkbox",
+        "description": "A material design checkbox.",
+        "url": "https://api.flutter.dev/flutter/material/Checkbox-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "checkbox-list-tile",
+                "label": "CheckboxListTile"
+            },
+            {
+                "id": "switch",
+                "label": "Switch"
+            },
+            {
+                "id": "radio",
+                "label": "Radio"
+            },
+            {
+                "id": "slider",
+                "label": "Slider"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Checkbox",
+                "code": "Checkbox({Key? key, required bool? value, bool tristate = false, required ValueChanged<bool?>? onChanged, MouseCursor? mouseCursor, Color? activeColor, MaterialStateProperty<Color?>? fillColor, Color? checkColor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, MaterialTapTargetSize? materialTapTargetSize, VisualDensity? visualDensity, FocusNode? focusNode, bool autofocus = false, OutlinedBorder? shape, BorderSide? side, bool isError = false, String? semanticLabel})"
+            },
+            {
+                "name": "Checkbox.adaptive",
+                "code": "Checkbox.adaptive({Key? key, required bool? value, bool tristate = false, required ValueChanged<bool?>? onChanged, MouseCursor? mouseCursor, Color? activeColor, MaterialStateProperty<Color?>? fillColor, Color? checkColor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, MaterialTapTargetSize? materialTapTargetSize, VisualDensity? visualDensity, FocusNode? focusNode, bool autofocus = false, OutlinedBorder? shape, BorderSide? side, bool isError = false, String? semanticLabel})"
+            }
+        ]
+    },
+    {
+        "id": "circular-progress-indicator",
+        "label": "CircularProgressIndicator",
+        "description": "A Material Design circular progress indicator, which spins to indicate that the application is busy.",
+        "url": "https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "linear-progress-indicator",
+                "label": "LinearProgressIndicator"
+            },
+            {
+                "id": "refresh-indicator",
+                "label": "RefreshIndicator"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "CircularProgressIndicator",
+                "code": "CircularProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double strokeWidth = 4.0, double strokeAlign = strokeAlignCenter, String? semanticsLabel, String? semanticsValue, StrokeCap? strokeCap})"
+            },
+            {
+                "name": "CircularProgressIndicator.adaptive",
+                "code": "CircularProgressIndicator.adaptive({Key? key, double? value, Color? backgroundColor, Animation<Color?>? valueColor, double strokeWidth = 4.0, String? semanticsLabel, String? semanticsValue, StrokeCap? strokeCap, double strokeAlign = strokeAlignCenter})"
+            }
+        ]
+    },
+    {
+        "id": "column",
+        "label": "Column",
+        "description": "A widget that displays its children in a vertical array.",
+        "url": "https://api.flutter.dev/flutter/widgets/Column-class.html",
+        "category": "layout",
+        "type": "renderObject",
+        "related": [
+            {
+                "id": "row",
+                "label": "Row"
+            },
+            {
+                "id": "flex",
+                "label": "Flex"
+            },
+            {
+                "id": "expanded",
+                "label": "Expanded"
+            },
+            {
+                "id": "flexible",
+                "label": "Flexible"
+            },
+            {
+                "id": "single-child-scroll-view",
+                "label": "SingleChildScrollView"
+            },
+            {
+                "id": "spacer",
+                "label": "Spacer"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Column",
+                "code": "Column({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, MainAxisSize mainAxisSize = MainAxisSize.max, CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center, TextDirection? textDirection, VerticalDirection verticalDirection = VerticalDirection.down, TextBaseline? textBaseline, List<Widget> children = const <Widget>[]})"
+            }
+        ]
+    },
+    {
+        "id": "container",
+        "label": "Container",
+        "description": "A convenience widget that combines common painting, positioning, and sizing widgets.",
+        "url": "https://api.flutter.dev/flutter/widgets/Container-class.html",
+        "category": "layout",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "animated-container",
+                "label": "AnimatedContainer"
+            },
+            {
+                "id": "ink",
+                "label": "Ink"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Container",
+                "code": "Container({Key? key, AlignmentGeometry? alignment, EdgeInsetsGeometry? padding, Color? color, Decoration? decoration, Decoration? foregroundDecoration, double? width, double? height, BoxConstraints? constraints, EdgeInsetsGeometry? margin, Matrix4? transform, AlignmentGeometry? transformAlignment, Widget? child, Clip clipBehavior = Clip.none})"
+            }
+        ]
+    },
+    {
+        "id": "cupertino-alert-dialog",
+        "label": "CupertinoAlertDialog",
+        "description": "An iOS-style alert dialog.",
+        "url": "https://api.flutter.dev/flutter/cupertino/CupertinoAlertDialog-class.html",
+        "category": "cupertino",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "cupertino-popup-surface",
+                "label": "CupertinoPopupSurface"
+            },
+            {
+                "id": "cupertino-dialog-action",
+                "label": "CupertinoDialogAction"
+            },
+            {
+                "id": "alert-dialog",
+                "label": "AlertDialog"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "CupertinoAlertDialog",
+                "code": "CupertinoAlertDialog({Key? key, Widget? title, Widget? content, List<Widget> actions = const <Widget>[], ScrollController? scrollController, ScrollController? actionScrollController, Duration insetAnimationDuration = const Duration(milliseconds: 100), Curve insetAnimationCurve = Curves.decelerate})"
+            }
+        ]
+    },
+    {
+        "id": "cupertino-button",
+        "label": "CupertinoButton",
+        "description": "An iOS-style button.",
+        "url": "https://api.flutter.dev/flutter/cupertino/CupertinoButton-class.html",
+        "category": "cupertino",
+        "type": "stateful",
+        "related": [],
+        "availableConstructors": [
+            {
+                "name": "CupertinoButton",
+                "code": "CupertinoButton({Key? key, required Widget child, EdgeInsetsGeometry? padding, Color? color, Color disabledColor = CupertinoColors.quaternarySystemFill, double? minSize = kMinInteractiveDimensionCupertino, double? pressedOpacity = 0.4, BorderRadius? borderRadius = const BorderRadius.all(Radius.circular(8.0)), AlignmentGeometry alignment = Alignment.center, required VoidCallback? onPressed})"
+            },
+            {
+                "name": "CupertinoButton.filled",
+                "code": "CupertinoButton.filled({Key? key, required Widget child, EdgeInsetsGeometry? padding, Color disabledColor = CupertinoColors.quaternarySystemFill, double? minSize = kMinInteractiveDimensionCupertino, double? pressedOpacity = 0.4, BorderRadius? borderRadius = const BorderRadius.all(Radius.circular(8.0)), AlignmentGeometry alignment = Alignment.center, required VoidCallback? onPressed})"
+            }
+        ]
+    },
+    {
+        "id": "cupertino-date-picker",
+        "label": "CupertinoDatePicker",
+        "description": "A date picker widget in iOS style.",
+        "url": "https://api.flutter.dev/flutter/cupertino/CupertinoDatePicker-class.html",
+        "category": "cupertino",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "cupertino-timer-picker",
+                "label": "CupertinoTimerPicker"
+            },
+            {
+                "id": "cupertino-picker",
+                "label": "CupertinoPicker"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "CupertinoDatePicker",
+                "code": "CupertinoDatePicker({Key? key, CupertinoDatePickerMode mode = CupertinoDatePickerMode.dateAndTime, required ValueChanged<DateTime> onDateTimeChanged, DateTime? initialDateTime, DateTime? minimumDate, DateTime? maximumDate, int minimumYear = 1, int? maximumYear, int minuteInterval = 1, bool use24hFormat = false, DatePickerDateOrder? dateOrder, Color? backgroundColor, bool showDayOfWeek = false, double itemExtent = _kItemExtent})"
+            }
+        ]
+    },
+    {
+        "id": "cupertino-picker",
+        "label": "CupertinoPicker",
+        "description": "An iOS-styled picker.",
+        "url": "https://api.flutter.dev/flutter/cupertino/CupertinoPicker-class.html",
+        "category": "cupertino",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "list-wheel-scroll-view",
+                "label": "ListWheelScrollView"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "CupertinoPicker",
+                "code": "CupertinoPicker({Key? key, double diameterRatio = _kDefaultDiameterRatio, Color? backgroundColor, double offAxisFraction = 0.0, bool useMagnifier = false, double magnification = 1.0, FixedExtentScrollController? scrollController, double squeeze = _kSqueeze, required double itemExtent, required ValueChanged<int>? onSelectedItemChanged, required List<Widget> children, Widget? selectionOverlay = const CupertinoPickerDefaultSelectionOverlay(), bool looping = false})"
+            },
+            {
+                "name": "CupertinoPicker.builder",
+                "code": "CupertinoPicker.builder({Key? key, double diameterRatio = _kDefaultDiameterRatio, Color? backgroundColor, double offAxisFraction = 0.0, bool useMagnifier = false, double magnification = 1.0, FixedExtentScrollController? scrollController, double squeeze = _kSqueeze, required double itemExtent, required ValueChanged<int>? onSelectedItemChanged, required NullableIndexedWidgetBuilder itemBuilder, int? childCount, Widget? selectionOverlay = const CupertinoPickerDefaultSelectionOverlay()})"
+            }
+        ]
+    },
+    {
+        "id": "cupertino-slider",
+        "label": "CupertinoSlider",
+        "description": "An iOS-style slider.",
+        "url": "https://api.flutter.dev/flutter/cupertino/CupertinoSlider-class.html",
+        "category": "cupertino",
+        "type": "stateful",
+        "related": [],
+        "availableConstructors": [
+            {
+                "name": "CupertinoSlider",
+                "code": "CupertinoSlider({Key? key, required double value, required ValueChanged<double>? onChanged, ValueChanged<double>? onChangeStart, ValueChanged<double>? onChangeEnd, double min = 0.0, double max = 1.0, int? divisions, Color? activeColor, Color thumbColor = CupertinoColors.white})"
+            }
+        ]
+    },
+    {
+        "id": "cupertino-switch",
+        "label": "CupertinoSwitch",
+        "description": "An iOS-style switch.",
+        "url": "https://api.flutter.dev/flutter/cupertino/CupertinoSwitch-class.html",
+        "category": "cupertino",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "switch",
+                "label": "Switch"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "CupertinoSwitch",
+                "code": "CupertinoSwitch({Key? key, required bool value, required ValueChanged<bool>? onChanged, Color? activeColor, Color? trackColor, Color? thumbColor, bool? applyTheme, Color? focusColor, FocusNode? focusNode, ValueChanged<bool>? onFocusChange, bool autofocus = false, DragStartBehavior dragStartBehavior = DragStartBehavior.start})"
+            }
+        ]
+    },
+    {
+        "id": "cupertino-timer-picker",
+        "label": "CupertinoTimerPicker",
+        "description": "A countdown timer picker in iOS style.",
+        "url": "https://api.flutter.dev/flutter/cupertino/CupertinoTimerPicker-class.html",
+        "category": "cupertino",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "cupertino-date-picker",
+                "label": "CupertinoDatePicker"
+            },
+            {
+                "id": "cupertino-picker",
+                "label": "CupertinoPicker"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "CupertinoTimerPicker",
+                "code": "CupertinoTimerPicker({Key? key, CupertinoTimerPickerMode mode = CupertinoTimerPickerMode.hms, Duration initialTimerDuration = Duration.zero, int minuteInterval = 1, int secondInterval = 1, AlignmentGeometry alignment = Alignment.center, Color? backgroundColor, double itemExtent = _kItemExtent, required ValueChanged<Duration> onTimerDurationChanged})"
+            }
+        ]
+    },
+    {
+        "id": "dropdown-button",
+        "label": "DropdownButton",
+        "description": "A Material Design button for selecting from a list of items.",
+        "url": "https://api.flutter.dev/flutter/material/DropdownButton-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "dropdown-button-form-field",
+                "label": "DropdownButtonFormField"
+            },
+            {
+                "id": "dropdown-menu-item",
+                "label": "DropdownMenuItem"
+            },
+            {
+                "id": "dropdown-button-hide-underline",
+                "label": "DropdownButtonHideUnderline"
+            },
+            {
+                "id": "elevated-button",
+                "label": "ElevatedButton"
+            },
+            {
+                "id": "text-button",
+                "label": "TextButton"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "DropdownButton",
+                "code": "DropdownButton({Key? key, required List<DropdownMenuItem<T>>? items, DropdownButtonBuilder? selectedItemBuilder, T? value, Widget? hint, Widget? disabledHint, required ValueChanged<T?>? onChanged, VoidCallback? onTap, int elevation = 8, TextStyle? style, Widget? underline, Widget? icon, Color? iconDisabledColor, Color? iconEnabledColor, double iconSize = 24.0, bool isDense = false, bool isExpanded = false, double? itemHeight = kMinInteractiveDimension, Color? focusColor, FocusNode? focusNode, bool autofocus = false, Color? dropdownColor, double? menuMaxHeight, bool? enableFeedback, AlignmentGeometry alignment = AlignmentDirectional.centerStart, BorderRadius? borderRadius, EdgeInsetsGeometry? padding})"
+            }
+        ]
+    },
+    {
+        "id": "elevated-button",
+        "label": "ElevatedButton",
+        "description": "A Material Design \"elevated button\".",
+        "url": "https://api.flutter.dev/flutter/material/ElevatedButton-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "filled-button",
+                "label": "FilledButton"
+            },
+            {
+                "id": "outlined-button",
+                "label": "OutlinedButton"
+            },
+            {
+                "id": "text-button",
+                "label": "TextButton"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "ElevatedButton",
+                "code": "ElevatedButton({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip clipBehavior = Clip.none, MaterialStatesController? statesController, required Widget? child})"
+            },
+            {
+                "name": "ElevatedButton.icon",
+                "code": "ElevatedButton.icon({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool? autofocus, Clip? clipBehavior, MaterialStatesController? statesController, required Widget icon, required Widget label})"
+            }
+        ]
+    },
+    {
+        "id": "expanded",
+        "label": "Expanded",
+        "description": "A widget that expands a child of a Row, Column, or Flex so that the child fills the available space.",
+        "url": "https://api.flutter.dev/flutter/widgets/Expanded-class.html",
+        "category": "layout",
+        "type": "proxy",
+        "related": [
+            {
+                "id": "flexible",
+                "label": "Flexible"
+            },
+            {
+                "id": "spacer",
+                "label": "Spacer"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Expanded",
+                "code": "Expanded({Key? key, int flex = 1, required Widget child})"
+            }
+        ]
+    },
+    {
+        "id": "filled-button",
+        "label": "FilledButton",
+        "description": "A Material Design filled button.",
+        "url": "https://api.flutter.dev/flutter/material/FilledButton-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "elevated-button",
+                "label": "ElevatedButton"
+            },
+            {
+                "id": "outlined-button",
+                "label": "OutlinedButton"
+            },
+            {
+                "id": "text-button",
+                "label": "TextButton"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "FilledButton",
+                "code": "FilledButton({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip clipBehavior = Clip.none, MaterialStatesController? statesController, required Widget? child})"
+            },
+            {
+                "name": "FilledButton.icon",
+                "code": "FilledButton.icon({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool? autofocus, Clip? clipBehavior, MaterialStatesController? statesController, required Widget icon, required Widget label})"
+            },
+            {
+                "name": "FilledButton.tonal",
+                "code": "FilledButton.tonal({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip clipBehavior = Clip.none, MaterialStatesController? statesController, required Widget? child})"
+            },
+            {
+                "name": "FilledButton.tonalIcon",
+                "code": "FilledButton.tonalIcon({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool? autofocus, Clip? clipBehavior, MaterialStatesController? statesController, required Widget icon, required Widget label})"
+            }
+        ]
+    },
+    {
+        "id": "flexible",
+        "label": "Flexible",
+        "description": "A widget that controls how a child of a Row, Column, or Flex flexes.",
+        "url": "https://api.flutter.dev/flutter/widgets/Flexible-class.html",
+        "category": "layout",
+        "type": "proxy",
+        "related": [
+            {
+                "id": "expanded",
+                "label": "Expanded"
+            },
+            {
+                "id": "spacer",
+                "label": "Spacer"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Flexible",
+                "code": "Flexible({Key? key, int flex = 1, FlexFit fit = FlexFit.loose, required Widget child})"
+            }
+        ]
+    },
+    {
+        "id": "floating-action-button",
+        "label": "FloatingActionButton",
+        "description": "A Material Design floating action button.",
+        "url": "https://api.flutter.dev/flutter/material/FloatingActionButton-class.html",
+        "category": "material",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "scaffold",
+                "label": "Scaffold"
+            },
+            {
+                "id": "elevated-button",
+                "label": "ElevatedButton"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "FloatingActionButton",
+                "code": "FloatingActionButton({Key? key, Widget? child, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback? onPressed, MouseCursor? mouseCursor, bool mini = false, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool isExtended = false, bool? enableFeedback})"
+            },
+            {
+                "name": "FloatingActionButton.extended",
+                "code": "FloatingActionButton.extended({Key? key, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, Color? splashColor, double? highlightElevation, double? disabledElevation, required VoidCallback? onPressed, MouseCursor? mouseCursor = SystemMouseCursors.click, ShapeBorder? shape, bool isExtended = true, MaterialTapTargetSize? materialTapTargetSize, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, double? extendedIconLabelSpacing, EdgeInsetsGeometry? extendedPadding, TextStyle? extendedTextStyle, Widget? icon, required Widget label, bool? enableFeedback})"
+            },
+            {
+                "name": "FloatingActionButton.large",
+                "code": "FloatingActionButton.large({Key? key, Widget? child, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback? onPressed, MouseCursor? mouseCursor, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool? enableFeedback})"
+            },
+            {
+                "name": "FloatingActionButton.small",
+                "code": "FloatingActionButton.small({Key? key, Widget? child, String? tooltip, Color? foregroundColor, Color? backgroundColor, Color? focusColor, Color? hoverColor, Color? splashColor, Object? heroTag = const _DefaultHeroTag(), double? elevation, double? focusElevation, double? hoverElevation, double? highlightElevation, double? disabledElevation, required VoidCallback? onPressed, MouseCursor? mouseCursor, ShapeBorder? shape, Clip clipBehavior = Clip.none, FocusNode? focusNode, bool autofocus = false, MaterialTapTargetSize? materialTapTargetSize, bool? enableFeedback})"
+            }
+        ]
+    },
+    {
+        "id": "fractionally-sized-box",
+        "label": "FractionallySizedBox",
+        "description": "A widget that sizes its child to a fraction of the total available space.",
+        "url": "https://api.flutter.dev/flutter/widgets/FractionallySizedBox-class.html",
+        "category": "layout",
+        "type": "renderObject",
+        "related": [
+            {
+                "id": "align",
+                "label": "Align"
+            },
+            {
+                "id": "overflow-box",
+                "label": "OverflowBox"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "FractionallySizedBox",
+                "code": "FractionallySizedBox({Key? key, AlignmentGeometry alignment = Alignment.center, double? widthFactor, double? heightFactor, Widget? child})"
+            }
+        ]
+    },
+    {
+        "id": "grid-view",
+        "label": "GridView",
+        "description": "A scrollable, 2D array of widgets.",
+        "url": "https://api.flutter.dev/flutter/widgets/GridView-class.html",
+        "category": "scrolling",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "single-child-scroll-view",
+                "label": "SingleChildScrollView"
+            },
+            {
+                "id": "list-view",
+                "label": "ListView"
+            },
+            {
+                "id": "page-view",
+                "label": "PageView"
+            },
+            {
+                "id": "custom-scroll-view",
+                "label": "CustomScrollView"
+            },
+            {
+                "id": "notification-listener",
+                "label": "NotificationListener"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "GridView",
+                "code": "GridView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, required SliverGridDelegate gridDelegate, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, List<Widget> children = const <Widget>[], int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, Clip clipBehavior = Clip.hardEdge, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId})"
+            },
+            {
+                "name": "GridView.builder",
+                "code": "GridView.builder({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, required SliverGridDelegate gridDelegate, required NullableIndexedWidgetBuilder itemBuilder, ChildIndexGetter? findChildIndexCallback, int? itemCount, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})"
+            },
+            {
+                "name": "GridView.count",
+                "code": "GridView.count({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, required int crossAxisCount, double mainAxisSpacing = 0.0, double crossAxisSpacing = 0.0, double childAspectRatio = 1.0, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, List<Widget> children = const <Widget>[], int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})"
+            },
+            {
+                "name": "GridView.custom",
+                "code": "GridView.custom({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, required SliverGridDelegate gridDelegate, required SliverChildDelegate childrenDelegate, double? cacheExtent, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})"
+            }
+        ]
+    },
+    {
+        "id": "hero",
+        "label": "Hero",
+        "description": "A widget that marks its child as being a candidate for hero animations.",
+        "url": "https://api.flutter.dev/flutter/widgets/Hero-class.html",
+        "category": "animation",
+        "type": "stateful",
+        "related": [],
+        "availableConstructors": [
+            {
+                "name": "Hero",
+                "code": "Hero({Key? key, required Object tag, CreateRectTween? createRectTween, HeroFlightShuttleBuilder? flightShuttleBuilder, HeroPlaceholderBuilder? placeholderBuilder, bool transitionOnUserGestures = false, required Widget child})"
+            }
+        ]
+    },
+    {
+        "id": "icon-button",
+        "label": "IconButton",
+        "description": "A Material Design icon button.",
+        "url": "https://api.flutter.dev/flutter/material/IconButton-class.html",
+        "category": "material",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "icon",
+                "label": "Icon"
+            },
+            {
+                "id": "back-button",
+                "label": "BackButton"
+            },
+            {
+                "id": "close-button",
+                "label": "CloseButton"
+            },
+            {
+                "id": "app-bar",
+                "label": "AppBar"
+            },
+            {
+                "id": "text-button",
+                "label": "TextButton"
+            },
+            {
+                "id": "elevated-button",
+                "label": "ElevatedButton"
+            },
+            {
+                "id": "outlined-button",
+                "label": "OutlinedButton"
+            },
+            {
+                "id": "ink-response",
+                "label": "InkResponse"
+            },
+            {
+                "id": "ink-well",
+                "label": "InkWell"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "IconButton",
+                "code": "IconButton({Key? key, double? iconSize, VisualDensity? visualDensity, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, double? splashRadius, Color? color, Color? focusColor, Color? hoverColor, Color? highlightColor, Color? splashColor, Color? disabledColor, required VoidCallback? onPressed, MouseCursor? mouseCursor, FocusNode? focusNode, bool autofocus = false, String? tooltip, bool? enableFeedback, BoxConstraints? constraints, ButtonStyle? style, bool? isSelected, Widget? selectedIcon, required Widget icon})"
+            },
+            {
+                "name": "IconButton.filled",
+                "code": "IconButton.filled({Key? key, double? iconSize, VisualDensity? visualDensity, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, double? splashRadius, Color? color, Color? focusColor, Color? hoverColor, Color? highlightColor, Color? splashColor, Color? disabledColor, required VoidCallback? onPressed, MouseCursor? mouseCursor, FocusNode? focusNode, bool autofocus = false, String? tooltip, bool? enableFeedback, BoxConstraints? constraints, ButtonStyle? style, bool? isSelected, Widget? selectedIcon, required Widget icon})"
+            },
+            {
+                "name": "IconButton.filledTonal",
+                "code": "IconButton.filledTonal({Key? key, double? iconSize, VisualDensity? visualDensity, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, double? splashRadius, Color? color, Color? focusColor, Color? hoverColor, Color? highlightColor, Color? splashColor, Color? disabledColor, required VoidCallback? onPressed, MouseCursor? mouseCursor, FocusNode? focusNode, bool autofocus = false, String? tooltip, bool? enableFeedback, BoxConstraints? constraints, ButtonStyle? style, bool? isSelected, Widget? selectedIcon, required Widget icon})"
+            },
+            {
+                "name": "IconButton.outlined",
+                "code": "IconButton.outlined({Key? key, double? iconSize, VisualDensity? visualDensity, EdgeInsetsGeometry? padding, AlignmentGeometry? alignment, double? splashRadius, Color? color, Color? focusColor, Color? hoverColor, Color? highlightColor, Color? splashColor, Color? disabledColor, required VoidCallback? onPressed, MouseCursor? mouseCursor, FocusNode? focusNode, bool autofocus = false, String? tooltip, bool? enableFeedback, BoxConstraints? constraints, ButtonStyle? style, bool? isSelected, Widget? selectedIcon, required Widget icon})"
+            }
+        ]
+    },
+    {
+        "id": "icon",
+        "label": "Icon",
+        "description": "A graphical icon widget drawn with a glyph from a font described in an IconData such as material's predefined IconDatas in Icons.",
+        "url": "https://api.flutter.dev/flutter/widgets/Icon-class.html",
+        "category": "graphics",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "icon-button",
+                "label": "IconButton"
+            },
+            {
+                "id": "icon-theme",
+                "label": "IconTheme"
+            },
+            {
+                "id": "image-icon",
+                "label": "ImageIcon"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Icon",
+                "code": "Icon(IconData? icon, {Key? key, double? size, double? fill, double? weight, double? grade, double? opticalSize, Color? color, List<Shadow>? shadows, String? semanticLabel, TextDirection? textDirection})"
+            }
+        ]
+    },
+    {
+        "id": "image",
+        "label": "Image",
+        "description": "A widget that displays an image.",
+        "url": "https://api.flutter.dev/flutter/widgets/Image-class.html",
+        "category": "graphics",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "icon",
+                "label": "Icon"
+            },
+            {
+                "id": "icon-button",
+                "label": "IconButton"
+            },
+            {
+                "id": "icon-theme",
+                "label": "IconTheme"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Image",
+                "code": "Image({Key? key, required ImageProvider<Object> image, ImageFrameBuilder? frameBuilder, ImageLoadingBuilder? loadingBuilder, ImageErrorWidgetBuilder? errorBuilder, String? semanticLabel, bool excludeFromSemantics = false, double? width, double? height, Color? color, Animation<double>? opacity, BlendMode? colorBlendMode, BoxFit? fit, AlignmentGeometry alignment = Alignment.center, ImageRepeat repeat = ImageRepeat.noRepeat, Rect? centerSlice, bool matchTextDirection = false, bool gaplessPlayback = false, bool isAntiAlias = false, FilterQuality filterQuality = FilterQuality.low})"
+            }
+        ]
+    },
+    {
+        "id": "linear-progress-indicator",
+        "label": "LinearProgressIndicator",
+        "description": "A Material Design linear progress indicator, also known as a progress bar.",
+        "url": "https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html",
+        "category": "material",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "circular-progress-indicator",
+                "label": "CircularProgressIndicator"
+            },
+            {
+                "id": "refresh-indicator",
+                "label": "RefreshIndicator"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "LinearProgressIndicator",
+                "code": "LinearProgressIndicator({Key? key, double? value, Color? backgroundColor, Color? color, Animation<Color?>? valueColor, double? minHeight, String? semanticsLabel, String? semanticsValue, BorderRadiusGeometry borderRadius = BorderRadius.zero})"
+            }
+        ]
+    },
+    {
+        "id": "list-view",
+        "label": "ListView",
+        "description": "A scrollable list of widgets arranged linearly.",
+        "url": "https://api.flutter.dev/flutter/widgets/ListView-class.html",
+        "category": "scrolling",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "single-child-scroll-view",
+                "label": "SingleChildScrollView"
+            },
+            {
+                "id": "page-view",
+                "label": "PageView"
+            },
+            {
+                "id": "grid-view",
+                "label": "GridView"
+            },
+            {
+                "id": "custom-scroll-view",
+                "label": "CustomScrollView"
+            },
+            {
+                "id": "list-body",
+                "label": "ListBody"
+            },
+            {
+                "id": "scroll-notification",
+                "label": "ScrollNotification"
+            },
+            {
+                "id": "notification-listener",
+                "label": "NotificationListener"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "ListView",
+                "code": "ListView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, double? itemExtent, Widget? prototypeItem, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, List<Widget> children = const <Widget>[], int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})"
+            },
+            {
+                "name": "ListView.builder",
+                "code": "ListView.builder({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, double? itemExtent, Widget? prototypeItem, required NullableIndexedWidgetBuilder itemBuilder, ChildIndexGetter? findChildIndexCallback, int? itemCount, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})"
+            },
+            {
+                "name": "ListView.custom",
+                "code": "ListView.custom({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, double? itemExtent, Widget? prototypeItem, required SliverChildDelegate childrenDelegate, double? cacheExtent, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})"
+            },
+            {
+                "name": "ListView.separated",
+                "code": "ListView.separated({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, required NullableIndexedWidgetBuilder itemBuilder, ChildIndexGetter? findChildIndexCallback, required IndexedWidgetBuilder separatorBuilder, required int itemCount, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})"
+            }
+        ]
+    },
+    {
+        "id": "outlined-button",
+        "label": "OutlinedButton",
+        "description": "A Material Design \"Outlined Button\"; essentially a TextButton with an outlined border.",
+        "url": "https://api.flutter.dev/flutter/material/OutlinedButton-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "elevated-button",
+                "label": "ElevatedButton"
+            },
+            {
+                "id": "filled-button",
+                "label": "FilledButton"
+            },
+            {
+                "id": "text-button",
+                "label": "TextButton"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "OutlinedButton",
+                "code": "OutlinedButton({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip clipBehavior = Clip.none, MaterialStatesController? statesController, required Widget? child})"
+            },
+            {
+                "name": "OutlinedButton.icon",
+                "code": "OutlinedButton.icon({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ButtonStyle? style, FocusNode? focusNode, bool? autofocus, Clip? clipBehavior, MaterialStatesController? statesController, required Widget icon, required Widget label})"
+            }
+        ]
+    },
+    {
+        "id": "placeholder",
+        "label": "Placeholder",
+        "description": "A widget that draws a box that represents where other widgets will one day be added.",
+        "url": "https://api.flutter.dev/flutter/widgets/Placeholder-class.html",
+        "category": "layout",
+        "type": "stateless",
+        "related": [],
+        "availableConstructors": [
+            {
+                "name": "Placeholder",
+                "code": "Placeholder({Key? key, Color color = const Color(0xFF455A64), double strokeWidth = 2.0, double fallbackWidth = 400.0, double fallbackHeight = 400.0, Widget? child})"
+            }
+        ]
+    },
+    {
+        "id": "positioned",
+        "label": "Positioned",
+        "description": "A widget that controls where a child of a Stack is positioned.",
+        "url": "https://api.flutter.dev/flutter/widgets/Positioned-class.html",
+        "category": "layout",
+        "type": "proxy",
+        "related": [
+            {
+                "id": "animated-positioned",
+                "label": "AnimatedPositioned"
+            },
+            {
+                "id": "positioned-transition",
+                "label": "PositionedTransition"
+            },
+            {
+                "id": "positioned-directional",
+                "label": "PositionedDirectional"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Positioned",
+                "code": "Positioned({Key? key, double? left, double? top, double? right, double? bottom, double? width, double? height, required Widget child})"
+            },
+            {
+                "name": "Positioned.directional",
+                "code": "Positioned.directional({Key? key, required TextDirection textDirection, double? start, double? top, double? end, double? bottom, double? width, double? height, required Widget child})"
+            },
+            {
+                "name": "Positioned.fill",
+                "code": "Positioned.fill({Key? key, double? left = 0.0, double? top = 0.0, double? right = 0.0, double? bottom = 0.0, required Widget child})"
+            },
+            {
+                "name": "Positioned.fromRect",
+                "code": "Positioned.fromRect({Key? key, required Rect rect, required Widget child})"
+            },
+            {
+                "name": "Positioned.fromRelativeRect",
+                "code": "Positioned.fromRelativeRect({Key? key, required RelativeRect rect, required Widget child})"
+            }
+        ]
+    },
+    {
+        "id": "radio",
+        "label": "Radio",
+        "description": "A Material Design radio button.",
+        "url": "https://api.flutter.dev/flutter/material/Radio-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "radio-list-tile",
+                "label": "RadioListTile"
+            },
+            {
+                "id": "slider",
+                "label": "Slider"
+            },
+            {
+                "id": "checkbox",
+                "label": "Checkbox"
+            },
+            {
+                "id": "switch",
+                "label": "Switch"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Radio",
+                "code": "Radio({Key? key, required T value, required T? groupValue, required ValueChanged<T?>? onChanged, MouseCursor? mouseCursor, bool toggleable = false, Color? activeColor, MaterialStateProperty<Color?>? fillColor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, MaterialTapTargetSize? materialTapTargetSize, VisualDensity? visualDensity, FocusNode? focusNode, bool autofocus = false})"
+            },
+            {
+                "name": "Radio.adaptive",
+                "code": "Radio.adaptive({Key? key, required T value, required T? groupValue, required ValueChanged<T?>? onChanged, MouseCursor? mouseCursor, bool toggleable = false, Color? activeColor, MaterialStateProperty<Color?>? fillColor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, MaterialTapTargetSize? materialTapTargetSize, VisualDensity? visualDensity, FocusNode? focusNode, bool autofocus = false, bool useCupertinoCheckmarkStyle = false})"
+            }
+        ]
+    },
+    {
+        "id": "row",
+        "label": "Row",
+        "description": "A widget that displays its children in a horizontal array.",
+        "url": "https://api.flutter.dev/flutter/widgets/Row-class.html",
+        "category": "layout",
+        "type": "renderObject",
+        "related": [
+            {
+                "id": "column",
+                "label": "Column"
+            },
+            {
+                "id": "flex",
+                "label": "Flex"
+            },
+            {
+                "id": "expanded",
+                "label": "Expanded"
+            },
+            {
+                "id": "flexible",
+                "label": "Flexible"
+            },
+            {
+                "id": "spacer",
+                "label": "Spacer"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Row",
+                "code": "Row({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, MainAxisSize mainAxisSize = MainAxisSize.max, CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center, TextDirection? textDirection, VerticalDirection verticalDirection = VerticalDirection.down, TextBaseline? textBaseline, List<Widget> children = const <Widget>[]})"
+            }
+        ]
+    },
+    {
+        "id": "scaffold",
+        "label": "Scaffold",
+        "description": "Implements the basic Material Design visual layout structure.",
+        "url": "https://api.flutter.dev/flutter/material/Scaffold-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "app-bar",
+                "label": "AppBar"
+            },
+            {
+                "id": "bottom-app-bar",
+                "label": "BottomAppBar"
+            },
+            {
+                "id": "floating-action-button",
+                "label": "FloatingActionButton"
+            },
+            {
+                "id": "drawer",
+                "label": "Drawer"
+            },
+            {
+                "id": "bottom-navigation-bar",
+                "label": "BottomNavigationBar"
+            },
+            {
+                "id": "bottom-sheet",
+                "label": "BottomSheet"
+            },
+            {
+                "id": "snack-bar",
+                "label": "SnackBar"
+            },
+            {
+                "id": "material-banner",
+                "label": "MaterialBanner"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Scaffold",
+                "code": "Scaffold({Key? key, PreferredSizeWidget? appBar, Widget? body, Widget? floatingActionButton, FloatingActionButtonLocation? floatingActionButtonLocation, FloatingActionButtonAnimator? floatingActionButtonAnimator, List<Widget>? persistentFooterButtons, AlignmentDirectional persistentFooterAlignment = AlignmentDirectional.centerEnd, Widget? drawer, DrawerCallback? onDrawerChanged, Widget? endDrawer, DrawerCallback? onEndDrawerChanged, Widget? bottomNavigationBar, Widget? bottomSheet, Color? backgroundColor, bool? resizeToAvoidBottomInset, bool primary = true, DragStartBehavior drawerDragStartBehavior = DragStartBehavior.start, bool extendBody = false, bool extendBodyBehindAppBar = false, Color? drawerScrimColor, double? drawerEdgeDragWidth, bool drawerEnableOpenDragGesture = true, bool endDrawerEnableOpenDragGesture = true, String? restorationId})"
+            }
+        ]
+    },
+    {
+        "id": "segmented-button",
+        "label": "SegmentedButton",
+        "description": "A Material button that allows the user to select from limited set of options.",
+        "url": "https://api.flutter.dev/flutter/material/SegmentedButton-class.html",
+        "category": "material",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "toggle-buttons",
+                "label": "ToggleButtons"
+            },
+            {
+                "id": "radio",
+                "label": "Radio"
+            },
+            {
+                "id": "filter-chip",
+                "label": "FilterChip"
+            },
+            {
+                "id": "choice-chip",
+                "label": "ChoiceChip"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "SegmentedButton",
+                "code": "SegmentedButton({Key? key, required List<ButtonSegment<T>> segments, required Set<T> selected, void onSelectionChanged(Set<T>)?, bool multiSelectionEnabled = false, bool emptySelectionAllowed = false, ButtonStyle? style, bool showSelectedIcon = true, Widget? selectedIcon})"
+            }
+        ]
+    },
+    {
+        "id": "single-child-scroll-view",
+        "label": "SingleChildScrollView",
+        "description": "A box in which a single widget can be scrolled.",
+        "url": "https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html",
+        "category": "scrolling",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "list-view",
+                "label": "ListView"
+            },
+            {
+                "id": "grid-view",
+                "label": "GridView"
+            },
+            {
+                "id": "page-view",
+                "label": "PageView"
+            },
+            {
+                "id": "scrollable",
+                "label": "Scrollable"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "SingleChildScrollView",
+                "code": "SingleChildScrollView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, EdgeInsetsGeometry? padding, bool? primary, ScrollPhysics? physics, ScrollController? controller, Widget? child, DragStartBehavior dragStartBehavior = DragStartBehavior.start, Clip clipBehavior = Clip.hardEdge, String? restorationId, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual})"
+            }
+        ]
+    },
+    {
+        "id": "sized-box",
+        "label": "SizedBox",
+        "description": "A box with a specified size.",
+        "url": "https://api.flutter.dev/flutter/widgets/SizedBox-class.html",
+        "category": "layout",
+        "type": "renderObject",
+        "related": [
+            {
+                "id": "constrained-box",
+                "label": "ConstrainedBox"
+            },
+            {
+                "id": "unconstrained-box",
+                "label": "UnconstrainedBox"
+            },
+            {
+                "id": "fractionally-sized-box",
+                "label": "FractionallySizedBox"
+            },
+            {
+                "id": "aspect-ratio",
+                "label": "AspectRatio"
+            },
+            {
+                "id": "fitted-box",
+                "label": "FittedBox"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "SizedBox",
+                "code": "SizedBox({Key? key, double? width, double? height, Widget? child})"
+            },
+            {
+                "name": "SizedBox.expand",
+                "code": "SizedBox.expand({Key? key, Widget? child})"
+            },
+            {
+                "name": "SizedBox.fromSize",
+                "code": "SizedBox.fromSize({Key? key, Widget? child, Size? size})"
+            },
+            {
+                "name": "SizedBox.shrink",
+                "code": "SizedBox.shrink({Key? key, Widget? child})"
+            },
+            {
+                "name": "SizedBox.square",
+                "code": "SizedBox.square({Key? key, Widget? child, double? dimension})"
+            }
+        ]
+    },
+    {
+        "id": "slider",
+        "label": "Slider",
+        "description": "A Material Design slider.",
+        "url": "https://api.flutter.dev/flutter/material/Slider-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "slider-theme",
+                "label": "SliderTheme"
+            },
+            {
+                "id": "radio",
+                "label": "Radio"
+            },
+            {
+                "id": "checkbox",
+                "label": "Checkbox"
+            },
+            {
+                "id": "switch",
+                "label": "Switch"
+            },
+            {
+                "id": "media-query",
+                "label": "MediaQuery"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Slider",
+                "code": "Slider({Key? key, required double value, double? secondaryTrackValue, required ValueChanged<double>? onChanged, ValueChanged<double>? onChangeStart, ValueChanged<double>? onChangeEnd, double min = 0.0, double max = 1.0, int? divisions, String? label, Color? activeColor, Color? inactiveColor, Color? secondaryActiveColor, Color? thumbColor, MaterialStateProperty<Color?>? overlayColor, MouseCursor? mouseCursor, SemanticFormatterCallback? semanticFormatterCallback, FocusNode? focusNode, bool autofocus = false, SliderInteraction? allowedInteraction})"
+            },
+            {
+                "name": "Slider.adaptive",
+                "code": "Slider.adaptive({Key? key, required double value, double? secondaryTrackValue, required ValueChanged<double>? onChanged, ValueChanged<double>? onChangeStart, ValueChanged<double>? onChangeEnd, double min = 0.0, double max = 1.0, int? divisions, String? label, MouseCursor? mouseCursor, Color? activeColor, Color? inactiveColor, Color? secondaryActiveColor, Color? thumbColor, MaterialStateProperty<Color?>? overlayColor, SemanticFormatterCallback? semanticFormatterCallback, FocusNode? focusNode, bool autofocus = false, SliderInteraction? allowedInteraction})"
+            }
+        ]
+    },
+    {
+        "id": "spacer",
+        "label": "Spacer",
+        "description": "Spacer creates an adjustable, empty spacer that can be used to tune the spacing between widgets in a Flex container, like Row or Column.",
+        "url": "https://api.flutter.dev/flutter/widgets/Spacer-class.html",
+        "category": "layout",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "row",
+                "label": "Row"
+            },
+            {
+                "id": "column",
+                "label": "Column"
+            },
+            {
+                "id": "sized-box",
+                "label": "SizedBox"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Spacer",
+                "code": "Spacer({Key? key, int flex = 1})"
+            }
+        ]
+    },
+    {
+        "id": "stack",
+        "label": "Stack",
+        "description": "A widget that positions its children relative to the edges of its box.",
+        "url": "https://api.flutter.dev/flutter/widgets/Stack-class.html",
+        "category": "layout",
+        "type": "renderObject",
+        "related": [
+            {
+                "id": "align",
+                "label": "Align"
+            },
+            {
+                "id": "custom-single-child-layout",
+                "label": "CustomSingleChildLayout"
+            },
+            {
+                "id": "custom-multi-child-layout",
+                "label": "CustomMultiChildLayout"
+            },
+            {
+                "id": "flow",
+                "label": "Flow"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Stack",
+                "code": "Stack({Key? key, AlignmentGeometry alignment = AlignmentDirectional.topStart, TextDirection? textDirection, StackFit fit = StackFit.loose, Clip clipBehavior = Clip.hardEdge, List<Widget> children = const <Widget>[]})"
+            }
+        ]
+    },
+    {
+        "id": "switch",
+        "label": "Switch",
+        "description": "A Material Design switch.",
+        "url": "https://api.flutter.dev/flutter/material/Switch-class.html",
+        "category": "material",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "switch-list-tile",
+                "label": "SwitchListTile"
+            },
+            {
+                "id": "checkbox",
+                "label": "Checkbox"
+            },
+            {
+                "id": "radio",
+                "label": "Radio"
+            },
+            {
+                "id": "slider",
+                "label": "Slider"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Switch",
+                "code": "Switch({Key? key, required bool value, required ValueChanged<bool>? onChanged, Color? activeColor, Color? activeTrackColor, Color? inactiveThumbColor, Color? inactiveTrackColor, ImageProvider<Object>? activeThumbImage, ImageErrorListener? onActiveThumbImageError, ImageProvider<Object>? inactiveThumbImage, ImageErrorListener? onInactiveThumbImageError, MaterialStateProperty<Color?>? thumbColor, MaterialStateProperty<Color?>? trackColor, MaterialStateProperty<Color?>? trackOutlineColor, MaterialStateProperty<double?>? trackOutlineWidth, MaterialStateProperty<Icon?>? thumbIcon, MaterialTapTargetSize? materialTapTargetSize, DragStartBehavior dragStartBehavior = DragStartBehavior.start, MouseCursor? mouseCursor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, FocusNode? focusNode, ValueChanged<bool>? onFocusChange, bool autofocus = false})"
+            },
+            {
+                "name": "Switch.adaptive",
+                "code": "Switch.adaptive({Key? key, required bool value, required ValueChanged<bool>? onChanged, Color? activeColor, Color? activeTrackColor, Color? inactiveThumbColor, Color? inactiveTrackColor, ImageProvider<Object>? activeThumbImage, ImageErrorListener? onActiveThumbImageError, ImageProvider<Object>? inactiveThumbImage, ImageErrorListener? onInactiveThumbImageError, MaterialTapTargetSize? materialTapTargetSize, MaterialStateProperty<Color?>? thumbColor, MaterialStateProperty<Color?>? trackColor, MaterialStateProperty<Color?>? trackOutlineColor, MaterialStateProperty<double?>? trackOutlineWidth, MaterialStateProperty<Icon?>? thumbIcon, DragStartBehavior dragStartBehavior = DragStartBehavior.start, MouseCursor? mouseCursor, Color? focusColor, Color? hoverColor, MaterialStateProperty<Color?>? overlayColor, double? splashRadius, FocusNode? focusNode, ValueChanged<bool>? onFocusChange, bool autofocus = false, bool? applyCupertinoTheme})"
+            }
+        ]
+    },
+    {
+        "id": "text-button",
+        "label": "TextButton",
+        "description": "A Material Design \"Text Button\".",
+        "url": "https://api.flutter.dev/flutter/material/TextButton-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "elevated-button",
+                "label": "ElevatedButton"
+            },
+            {
+                "id": "filled-button",
+                "label": "FilledButton"
+            },
+            {
+                "id": "outlined-button",
+                "label": "OutlinedButton"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "TextButton",
+                "code": "TextButton({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip clipBehavior = Clip.none, MaterialStatesController? statesController, bool? isSemanticButton = true, required Widget child})"
+            },
+            {
+                "name": "TextButton.icon",
+                "code": "TextButton.icon({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ValueChanged<bool>? onHover, ValueChanged<bool>? onFocusChange, ButtonStyle? style, FocusNode? focusNode, bool? autofocus, Clip? clipBehavior, MaterialStatesController? statesController, required Widget icon, required Widget label})"
+            }
+        ]
+    },
+    {
+        "id": "text",
+        "label": "Text",
+        "description": "A run of text with a single style.",
+        "url": "https://api.flutter.dev/flutter/widgets/Text-class.html",
+        "category": "graphics",
+        "type": "stateless",
+        "related": [
+            {
+                "id": "rich-text",
+                "label": "RichText"
+            },
+            {
+                "id": "default-text-style",
+                "label": "DefaultTextStyle"
+            },
+            {
+                "id": "selectable-region",
+                "label": "SelectableRegion"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Text",
+                "code": "Text(String data, {Key? key, TextStyle? style, StrutStyle? strutStyle, TextAlign? textAlign, TextDirection? textDirection, Locale? locale, bool? softWrap, TextOverflow? overflow, double? textScaleFactor, int? maxLines, String? semanticsLabel, TextWidthBasis? textWidthBasis, TextHeightBehavior? textHeightBehavior, Color? selectionColor})"
+            },
+            {
+                "name": "Text.rich",
+                "code": "Text.rich(InlineSpan textSpan, {Key? key, TextStyle? style, StrutStyle? strutStyle, TextAlign? textAlign, TextDirection? textDirection, Locale? locale, bool? softWrap, TextOverflow? overflow, double? textScaleFactor, int? maxLines, String? semanticsLabel, TextWidthBasis? textWidthBasis, TextHeightBehavior? textHeightBehavior, Color? selectionColor})"
+            }
+        ]
+    },
+    {
+        "id": "text-field",
+        "label": "TextField",
+        "description": "A Material Design text field.",
+        "url": "https://api.flutter.dev/flutter/material/TextField-class.html",
+        "category": "material",
+        "type": "stateful",
+        "related": [
+            {
+                "id": "input-decorator",
+                "label": "InputDecorator"
+            },
+            {
+                "id": "editable-text",
+                "label": "EditableText"
+            },
+            {
+                "id": "text-form-field",
+                "label": "TextFormField"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "TextField",
+                "code": "TextField({Key? key, TextEditingController? controller, FocusNode? focusNode, UndoHistoryController? undoController, InputDecoration? decoration = const InputDecoration(), TextInputType? keyboardType, TextInputAction? textInputAction, TextCapitalization textCapitalization = TextCapitalization.none, TextStyle? style, StrutStyle? strutStyle, TextAlign textAlign = TextAlign.start, TextAlignVertical? textAlignVertical, TextDirection? textDirection, bool readOnly = false, @Deprecated('Use `contextMenuBuilder` instead. ' 'This feature was deprecated after v3.3.0-0.5.pre.') ToolbarOptions? toolbarOptions, bool? showCursor, bool autofocus = false, String obscuringCharacter = '•', bool obscureText = false, bool autocorrect = true, SmartDashesType? smartDashesType, SmartQuotesType? smartQuotesType, bool enableSuggestions = true, int? maxLines = 1, int? minLines, bool expands = false, int? maxLength, MaxLengthEnforcement? maxLengthEnforcement, ValueChanged<String>? onChanged, VoidCallback? onEditingComplete, ValueChanged<String>? onSubmitted, AppPrivateCommandCallback? onAppPrivateCommand, List<TextInputFormatter>? inputFormatters, bool? enabled, double cursorWidth = 2.0, double? cursorHeight, Radius? cursorRadius, bool? cursorOpacityAnimates, Color? cursorColor, BoxHeightStyle selectionHeightStyle = ui.BoxHeightStyle.tight, BoxWidthStyle selectionWidthStyle = ui.BoxWidthStyle.tight, Brightness? keyboardAppearance, EdgeInsets scrollPadding = const EdgeInsets.all(20.0), DragStartBehavior dragStartBehavior = DragStartBehavior.start, bool? enableInteractiveSelection, TextSelectionControls? selectionControls, GestureTapCallback? onTap, TapRegionCallback? onTapOutside, MouseCursor? mouseCursor, InputCounterWidgetBuilder? buildCounter, ScrollController? scrollController, ScrollPhysics? scrollPhysics, Iterable<String>? autofillHints = const <String>[], ContentInsertionConfiguration? contentInsertionConfiguration, Clip clipBehavior = Clip.hardEdge, String? restorationId, bool scribbleEnabled = true, bool enableIMEPersonalizedLearning = true, EditableTextContextMenuBuilder? contextMenuBuilder = _defaultContextMenuBuilder, bool canRequestFocus = true, SpellCheckConfiguration? spellCheckConfiguration, TextMagnifierConfiguration? magnifierConfiguration})"
+            }
+        ]
+    },
+    {
+        "id": "wrap",
+        "label": "Wrap",
+        "description": "A widget that displays its children in multiple horizontal or vertical runs.",
+        "url": "https://api.flutter.dev/flutter/widgets/Wrap-class.html",
+        "category": "layout",
+        "type": "renderObject",
+        "related": [
+            {
+                "id": "row",
+                "label": "Row"
+            }
+        ],
+        "availableConstructors": [
+            {
+                "name": "Wrap",
+                "code": "Wrap({Key? key, Axis direction = Axis.horizontal, WrapAlignment alignment = WrapAlignment.start, double spacing = 0.0, WrapAlignment runAlignment = WrapAlignment.start, double runSpacing = 0.0, WrapCrossAlignment crossAxisAlignment = WrapCrossAlignment.start, TextDirection? textDirection, VerticalDirection verticalDirection = VerticalDirection.down, Clip clipBehavior = Clip.none, List<Widget> children = const <Widget>[]})"
+            }
+        ]
+    }
+]

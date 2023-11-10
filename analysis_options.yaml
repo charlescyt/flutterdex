@@ -1,0 +1,8 @@
+include: package:choco_lints/app.yaml
+
+analyzer:
+  plugins:
+    - custom_lint
+
+  exclude:
+    - docs/**
